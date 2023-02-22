@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:movieapp/model/model_model.dart';
 
@@ -29,30 +31,30 @@ class _SearchPageState extends State<SearchPage> {
   // you can build your own list, i used IMBD data
 
   static List<MovieModel> main_movies_list = [
-    MovieModel("Far From Home", 2022, 5.8,
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCy-1HgbCygQO4V9Mzd43zEdU-o3n2hI13RT2bSaBhgeUUJs0ATbNHDPhXCVnTyqJWEY&usqp=CAU"),
-    MovieModel("Home", 2015, 6.63,
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCy-1HgbCygQO4V9Mzd43zEdU-o3n2hI13RT2bSaBhgeUUJs0ATbNHDPhXCVnTyqJWEY&usqp=CAU"),
-    MovieModel("Wednesday", 2022, 8.2,
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCy-1HgbCygQO4V9Mzd43zEdU-o3n2hI13RT2bSaBhgeUUJs0ATbNHDPhXCVnTyqJWEY&usqp=CAU"),
     MovieModel("Dune", 2021, 8.0,
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCy-1HgbCygQO4V9Mzd43zEdU-o3n2hI13RT2bSaBhgeUUJs0ATbNHDPhXCVnTyqJWEY&usqp=CAU"),
+        "https://www.whats-on-netflix.com/wp-content/uploads/2021/10/will-dune-be-coming-to-netflix-scaled.jpg"),
+    MovieModel("Wednesday", 2022, 8.2,
+        "https://www.whats-on-netflix.com/wp-content/uploads/2022/11/wednesdy-season-2-netflix-renewal-status.png"),
     MovieModel("Entergalactic", 2022, 7.4,
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCy-1HgbCygQO4V9Mzd43zEdU-o3n2hI13RT2bSaBhgeUUJs0ATbNHDPhXCVnTyqJWEY&usqp=CAU"),
+        "https://www.whats-on-netflix.com/wp-content/uploads/2022/06/entergalactic-netflix-kid-cudi-series.webp"),
     MovieModel("Troll", 2022, 5.8,
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCy-1HgbCygQO4V9Mzd43zEdU-o3n2hI13RT2bSaBhgeUUJs0ATbNHDPhXCVnTyqJWEY&usqp=CAU"),
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVjn5HsDKIH2v1STgepMmOk2q7rbi7encCeQ&usqp=CAU"),
     MovieModel("Day Shift", 2022, 6.1,
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCy-1HgbCygQO4V9Mzd43zEdU-o3n2hI13RT2bSaBhgeUUJs0ATbNHDPhXCVnTyqJWEY&usqp=CAU"),
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJamUfLE5pRzgzP6dl8QkNYuJXyCUsYtg_RA&usqp=CAU"),
     MovieModel("Extraction", 2020, 6.7,
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCy-1HgbCygQO4V9Mzd43zEdU-o3n2hI13RT2bSaBhgeUUJs0ATbNHDPhXCVnTyqJWEY&usqp=CAU"),
+        "https://www.whats-on-netflix.com/wp-content/uploads/2022/04/extraction-2-netflix.jpg"),
     MovieModel("John Wick", 2014, 7.4,
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCy-1HgbCygQO4V9Mzd43zEdU-o3n2hI13RT2bSaBhgeUUJs0ATbNHDPhXCVnTyqJWEY&usqp=CAU"),
-    MovieModel("Kate", 2021, 6.2,
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCy-1HgbCygQO4V9Mzd43zEdU-o3n2hI13RT2bSaBhgeUUJs0ATbNHDPhXCVnTyqJWEY&usqp=CAU"),
-    MovieModel("Carter", 2022, 5.1,
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCy-1HgbCygQO4V9Mzd43zEdU-o3n2hI13RT2bSaBhgeUUJs0ATbNHDPhXCVnTyqJWEY&usqp=CAU"),
-    MovieModel("Lou", 2022, 6.1,
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxCy-1HgbCygQO4V9Mzd43zEdU-o3n2hI13RT2bSaBhgeUUJs0ATbNHDPhXCVnTyqJWEY&usqp=CAU"),
+        "https://www.whats-on-netflix.com/wp-content/uploads/2019/02/are-the-john-wick-movies-on-netflix.jpg"),
+    MovieModel("Glass Onion", 2021, 6.2,
+        "https://www.whats-on-netflix.com/wp-content/uploads/2021/08/glass-onion-a-knives-out-mystery-coming-to-netflix-in-december-2022-jpg.webp"),
+    MovieModel("Witcher", 2022, 5.1,
+        "https://www.whats-on-netflix.com/wp-content/uploads/2021/12/best-new-tv-shows-on-Netlfix-this-week-december-18th-19th-2021.jpg"),
+    MovieModel("Nimona", 2022, 6.1,
+        "https://www.whats-on-netflix.com/wp-content/uploads/2022/05/nimona-netflix-movie-everything-we-know-so-far-jpg.webp"),
+    MovieModel("Far From Home", 2022, 5.8,
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSOVF9sQLSlf2ggz4guQ6uWWnZjDWO7qPs3Q&usqp=CAU"),
+    MovieModel("Home", 2015, 6.63,
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeaiVC77JWgC151Gvm2z-XkkaTBF8a3gRPMA&usqp=CAU"),
   ];
 
   // creating the list that we're going to use
@@ -115,6 +117,7 @@ class _SearchPageState extends State<SearchPage> {
             Expanded(
               // Now let's create a function to display a text in case we don't a result
               child: display_list.length == 0
+                  // ignore: prefer_const_constructors
                   ? Center(
                       child: Text(
                         "No Result Found",
